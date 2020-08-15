@@ -17,7 +17,7 @@ body {
   background-position: center, 0% 0%;
   background-repeat: repeat, repeat;
   /* color: rgb(32, 31, 28); */
-  color: rgb(213, 209, 204);
+  color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -44,7 +44,7 @@ hr.style {
     text-align: left;
   }
   a {
-    color: rgb(4, 56, 59);
+    color: rgb(245, 199, 199);
     text-decoration: none;
   }
 
