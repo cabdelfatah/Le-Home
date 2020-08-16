@@ -57,14 +57,10 @@ a {
 	right:0;
 	top:0;
 	bottom:0;
-	background:url('https://i.imgur.com/lL6tQfy.png');
+	background:url('https://source.unsplash.com/random');
 	background-size:cover;
 	z-index:1;
-	-webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(5px);	
+  	filter: blur(3px);	
 }
 .content{
 	position:relative;
