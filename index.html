@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> <div class="backgroundImageCVR">
+    <div class="background-image"></div>
     <!-- Title -->
-    <div class="middle">
+    <div class="middle content">
         <h1>Hello, am Abdelfatah &#128526</h1>
+        <p id="tdate"></p>
         <hr class="style1">
         <ul> <p>Projects</p>
             <hr>
-            <p></p>
+            <br>
             <li><a href="http://abdelfatah.xyz/quote-gen.html">Quote Generator</a></li>
             <li><a href="https://abdelfatah.xyz/coolpic.html">CoolPic Generator</a></li>
             <li><a href="https://abdelfatah.xyz/engine.html">Direct link googlesearch</a></li>
         </ul>
+    </div>
     </div>
     <!-- Projects -->
      <!-- Contact -->
@@ -30,6 +33,20 @@
     <div class="bottomleft">
         <a class="resume" href="http://abdelfatah.xyz/resume.pdf">Resume</a>
     </div>
+    <!-- Script -->
+    <script>
+        document.getElementById("tdate").innerHTML = formatAMPM();
+
+function formatAMPM() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? ' pm' : ' am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}
+    </script>
 </body>
 
 </html>
