@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite-scroll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title -->
+    <h1>Cool-Random Pictures - Infinite scroll
+        <form><input type=button value="reload-page" onClick="window.location.reload()"></form>
+    </h1>
+    <!-- Loader -->
+    <div class="loader" id="loader" >
+        <img src="loader.svg" alt="loading">
+    </div>
+    <!-- Image container -->
+    <div class="image-container" id="image-container">
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
